@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.section__title {
+    text-align: center;
+}
+
+.section__title-img {
+    width: rem(98);
+    display: inline-block;
+}
+
+.section__title-text {
+    margin-top: rem(9);
+    font-size: rem(40);
+}
+

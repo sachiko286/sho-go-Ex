@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.logo__inner {
+    display: flex;
+}
+
+.logo__img img {
+    width: rem(42);
+}
+
+.logo__text {
+    margin-left: rem(14);
+}
+
+.logo__text-name {
+    font-size: rem(20);
+    font-weight: bold;
+    color: #FF8A00;
+}
+
+.logo__text-subname {
+    font-size: rem(12);
+    font-weight: bold;
+    color: #FF8A00; 
+    margin-top: rem(5);
+}
