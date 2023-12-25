@@ -3,6 +3,7 @@
 .card__item {
     position: relative;
 }
+
 .card__item-image {
     max-width: rem(431);
     width: 100%;
@@ -19,6 +20,7 @@
     position: absolute;
     top: rem(188);
     left: rem(20);
+    // height: 100%;
 }
 
 .card__item-title {
@@ -32,11 +34,16 @@
 
 .card__item-text {
     max-width: rem(431);
-    padding: rem(30) rem(109) rem(30) rem(17);
+    padding-right: rem(109);
+    padding-left: rem(17);
     font-size: rem(12);
     background-color: #fff;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
     position: relative;
+    height: rem(100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card__item-text::before {

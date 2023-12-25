@@ -6,16 +6,27 @@
 
 .logo__img img {
     width: rem(42);
+    @include mq(sm) {
+        width: rem(31);
+        height: rem(36);
+    }
 }
 
 .logo__text {
     margin-left: rem(14);
+    @include mq(sm) {
+        margin-left: rem(11);
+    }
 }
 
 .logo__text-name {
     font-size: rem(20);
     font-weight: bold;
     color: #FF8A00;
+    @include mq(sm) {
+        font-size: rem(14);
+        line-height: 1.428;
+    }
 }
 
 .logo__text-subname {
@@ -23,4 +34,9 @@
     font-weight: bold;
     color: #FF8A00; 
     margin-top: rem(5);
+    @include mq(sm) {
+        font-size: rem(10);
+        margin-top: rem(2);
+        line-height: 1.4;
+    }
 }

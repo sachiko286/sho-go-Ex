@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.job {
+    margin-top: rem(80);
+    @include mq(md) {
+    }
+}
+
+.job__lead {
+    text-align: center;
+    margin-top: rem(43);
+}
+
+.job__content {
+    margin-top: rem(69);
+    padding-top: rem(58);
+    padding-bottom: rem(216);
+    background: linear-gradient(90deg, transparent 0%, transparent 12.638%, #F9F9F9 12.638%, #F9F9F9 100%);;
+    @include mq(md) {
+        background: #F9F9F9;
+        padding-bottom: rem(58);
+    }
+
+}
+
+.job__list-items {
+    display: grid;
+    // width: 600px; /*コンテナの余白幅を600pxに指定*/
+    grid-template-columns: 1fr 1fr;
+    padding-left: rem(240);
+    padding-right: rem(220);
+    gap: rem(133) rem(78);
+    @include mq(md) {
+        grid-template-columns: 1fr;
+        padding-left: rem(25);
+        padding-right: rem(25);
+        gap: rem(80);
+    }
+}
+
+.job__list-item-img.card__item-image {
+    max-width: none;
+}
+.job__list-item-box.card__item-content {
+position: static;
+}
+
+.job__list-item-title.card__item-title {
+    width: auto;
+    font-size: rem(16);
+}
+
+.job__list-item-text.card__item-text {
+    max-width: none;
+}

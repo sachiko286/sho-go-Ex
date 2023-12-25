@@ -1,0 +1,140 @@
+@use "global" as *;
+
+.footer {
+    margin-top: rem(97);
+    position: relative;
+}
+
+.footer__inner {
+    @include mq(md) {
+        height: rem(300);
+    }
+}
+
+.footer__img img{
+    @include mq(md) {
+        height: rem(300);
+        object-fit: cover;
+    }
+
+}
+
+.footer__content {
+    background: linear-gradient(180deg, rgba(255, 138, 0, 0.90) 0%, rgba(255, 184, 0, 0.90) 100%);
+    padding-top: rem(84);
+    padding-bottom: rem(66);
+    position: absolute;
+    top: 0;
+    // max-height: rem(505);
+    height: 100%;
+    width: 100%;
+    @include mq(md) {
+        padding-top: rem(30);
+        padding-bottom: rem(20);
+    
+        
+    }
+}
+
+.footer__cta-logo-img {
+    text-align: center;
+}
+.footer__cta-logo-img img {
+    display: inline-block;
+    width: rem(45);
+}
+.footer__title {
+    margin-top: rem(20);
+    text-align: center;
+    @include mq(md) {
+        margin-top: rem(10);
+    }
+}
+
+.footer__title h2 {
+    font-size: rem(42);
+    font-weight: bold;
+    color: #FFF;
+    @include mq(md) {
+        font-size: rem(18);;
+    }
+}
+
+.footer__text {
+    margin-top: rem(20);
+    text-align: center;
+    @include mq(md) {
+        margin-top: rem(10);
+    }
+}
+
+.footer__text p {
+    font-size: rem(16);
+    color: #FFF;
+    @include mq(md) {
+        font-size: rem(12);
+    }
+}
+
+.footer__buttom {
+    margin-top: rem(48);
+    text-align: center;
+    @include mq(md) {
+        margin-top: rem(25);
+    }
+}
+
+.footer__buttom .buttom {
+    background-color: transparent;
+    border: 4px solid #FFF;
+        @include mq(md) {
+        max-width: rem(180);
+                font-size: rem(12);
+        padding-top: rem(10);
+        padding-bottom: rem(10);
+        }
+        border: 2px solid #FFF;
+
+}
+
+.footer__buttom .buttom::before {
+    @include mq(md) {
+        right: rem(10);
+        width: rem(12);
+        height: rem(12);
+    }
+}
+
+.footer__buttom .buttom::after {
+    @include mq(md) {
+        right: rem(14);
+        top: rem(1);
+        width: rem(5);
+        height: rem(5);
+    }
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(49) rem(20);
+    @include mq(sm) {
+        flex-direction: column;
+        padding: rem(20) rem(20);
+    }
+
+}
+
+.copyright__logo a {
+    display: flex;
+}
+
+.copyright__text p {
+    font-size: rem(10);
+    @include mq(sm) {
+        @include mq(sm) {
+            margin-top: rem(10);
+        }
+    }
+}

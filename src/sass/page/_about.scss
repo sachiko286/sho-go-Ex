@@ -1,0 +1,82 @@
+@use "global" as *;
+
+.about {
+    margin-top: rem(80);
+
+}
+.about__inner {
+    max-width: rem(1000);
+    margin-inline: auto;
+    padding-left: rem(20);
+    padding-right: rem(43);
+    position: relative;
+    @include mq(md) {
+        padding-right: rem(20);
+    }
+}
+
+.about__content {
+    margin-top: rem(132);
+    @include mq(md) {
+        margin-top: rem(60);
+    }
+}
+
+.about__content-img img {
+    width: rem(137);
+    display: inline-block;
+}
+
+.about__content-title {
+    margin-top: rem(25);
+}
+
+.about__content-title h2 {
+    font-size: rem(24);
+    font-weight: bold;
+    @include mq(md) {
+        font-size: rem(18);
+    }
+}
+
+.about__content-text {
+    margin-top: rem(25);
+}
+
+.about__content-text p {
+    font-size: rem(16);
+    line-height: 2.5;
+    @include mq(md) {
+        line-height: 2;
+    }
+}
+
+.about__content-text.about__mission-text {
+    padding-right: rem(237);
+    @include mq(md) {
+        padding-right: 0;
+    }
+}
+
+.about__content.about__vision {
+    text-align: right;
+    margin-top: rem(111);
+    @include mq(md) {
+        text-align: start;
+        margin-top: rem(60);
+    }
+}
+
+.about__content-text.about__vision-text {
+    padding-left: rem(257);
+    @include mq(md) {
+        padding-left: 0;
+    }
+}
+
+.about__background {
+    margin-top: rem(-51);
+    @include mq(md) {
+        margin-top: rem(-30);
+    }
+}

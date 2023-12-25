@@ -16,3 +16,42 @@
     letter-spacing: 0.05em;
     line-height: 1.445;
 }
+
+.arrow {
+    position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+
+
+}
+
+.buttom::before,
+.buttom::after{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+    right: rem(34);
+	margin: auto;
+	content: "";
+	vertical-align: middle;
+}
+
+.buttom::before{
+	width: rem(16);
+	height: rem(16);
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: #fff;
+    right: rem(34);
+
+}
+.buttom::after{
+    right: rem(40);
+	width: rem(6);
+	height: rem(6);
+	border-top: 2px solid #FF8A00;
+	border-right: 2px solid #FF8A00;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
