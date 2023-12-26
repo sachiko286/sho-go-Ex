@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex" />
+  <!-- meta情報 -->
+  <title>募集要項 Webエンジニア</title>
+  <meta name="description" content="Webマーケティングを中心にクライアントの売上向上に特化した精鋭集団、株式会社Igatta Groupの採用サイトです" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="#" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./assets/js/script.js"></script>
+</head>
+
+<body>
+  <!-- ローディング -->
+  <!-- <div class="loading js-loading">
+    <div class="loading__img js-loading__img">
+      <img src="./assets/images/common/cta-logo.png" alt="logo">
+    </div>
+  </div> -->
+
+  <header class="header sub-header">
+    <div class="header__inner inner">
+      <h1 class="header__logo">
+        <a href="#">
+          <div class="logo__img">
+            <img src="./assets/images/common/igatta-recruit-logo.png" alt="会社ロゴ">
+          </div>
+          <div class="logo__text">
+            <p class="logo__text-name">Igatta Group</p>
+            <p class="logo__text-subname">新卒採用サイト</p>
+          </div>
+        </a>
+      </h1>
+
+      <!-- PCナビ -->
+      <nav class="header__nav">
+        <ul class="header__nav-items">
+          <li class="header__nav-item sub-header__nav-item">
+            <a href="http://localhost:3000/#about">Mission&Vision</a>
+          </li>
+          <li class="header__nav-item sub-header__nav-item">
+            <a href="http://localhost:3000/#message">Message</a>
+          </li>
+          <li class="header__nav-item sub-header__nav-item">
+            <a href="http://localhost:3000/#job">Job List</a>
+          </li>
+          <li class="header__nav-item header__nav-item--mypage">
+            <a class="js-modal-open" target="_blank" rel="noopener">MY PAGEはこちら</a>
+          </li>
+          <li class="header__nav-item header__nav-item--entry">
+            <a href="http://localhost:3000/entry.html" target="_blank" rel="noopener">エントリーはこちら</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ハンバーガーメニュー -->
+      <button class="header__hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- SPナビ -->
+      <div class="header__drawer js-drawer">
+        <nav class="header__drawer-nav">
+          <div class="header__drawer-img logo__img">
+            <img src="./assets/images/common/igatta-recruit-logo.png" alt="会社ロゴ">
+          </div>
+          <ul class="header__drawer-items">
+            <li class="header__drawer-item">
+              <a href="http://localhost:3000/#about">Mission&Vision</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="http://localhost:3000/#message">Message</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="http://localhost:3000/#job">Job List</a>
+            </li>
+            <li class="header__drawer-item--mypage header__nav-item--mypage">
+              <a class="js-modal-open" href="#" target="_blank" rel="noopener">MY PAGEはこちら</a>
+            </li>
+            <li class="header__drawer-item--entry  header__nav-item--entry">
+              <a href="http://localhost:3000/entry.html" target="_blank" rel="noopener">エントリーはこちら</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- モダール -->
+    <div class="modal js-modal">
+      <div class="modal__inner">
+        <div class="modal__overlay js-modal-close"></div>
+        <div class="modal__content">
+          <button class="modal__button js-modal-close">
+            <span></span>
+            <span></span>
+          </button>
+          <div class="modal__title">
+            <h1>MY PAGE-ログイン</h1>
+          </div>
+          <form class="modal__form form" action="">
+            <dl class="modal__wrap">
+              <dt class="modal__label">メールアドレス</dt>
+              <dd class="modal__input">
+                <input type="email" name="email" placeholder="例） example@example.com" required>
+              </dd>
+            </dl>
+            <dl class="modal__wrap">
+              <dt class="modal__label">パスワード</dt>
+              <dd class="modal__input">
+                <input type="password" name="password" required>
+              </dd>
+            </dl>
+            <div class="modal__submit">
+              <input type="submit" id="js-modal-submit" value="サインイン" disabled>
+            </div>
+          </form>
+          <p class="modai__new">
+            <a href="http://localhost:3000/entry.html">新規登録はこちら</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="sub-fv">
+      <div class="sub-fv__inner">
+        <div class="sub-fv__content">
+          <div class="sub-fv__img">
+            <img src="./assets/images/common/frontend.jpg" alt="エンジニアの画像">
+          </div>
+          <div class="sub-fv__text-area">
+            <p>新卒採用</p>
+            <h1 class="sub-fv__title">Webエンジニア職</h1>
+          </div>
+        </div>
+        <div class="sub-fv__background">
+          <div class="sub-fv__background-text">
+            弊社のWebエンジニアはフロントからバックエンドまで広く対応します。<br>基本的にサイト・システムの実装のみならず、要件定義フェーズから関わります。<br>HTMLコーディングはWebデザイナーが構築している場合もありますが、より複雑なJavaScript.PHPの実装、ECサイトの機能実装をメインに行います。<br>他社と比較して、フルスタックエンジニアを目指しやすい環境と言えます。
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="requirements">
+      <div class="requirements__inner">
+        <div class="requirements__title">
+          <h2>募集要項</h2>
+        </div>
+        <dl class="requirements__content">
+          <div class="requirements__content-list">
+            <dd class="requirements__content-title">職務内容</dd>
+            <dt class="requirements__content-detail">
+              ・案件の要件定義<br>
+              ・HTML,CSS,JavaScriptなどのコーディング<br>
+              ・Vue.js,Reactなどのフロントエンド<br>
+              ・PHP,WordPress,Cake.php,EC CUBEなどのバックエンド
+            </dt>
+          </div>
+          <div class="requirements__content-list">
+            <dd class="requirements__content-title">応募資格</dd>
+            <dt class="requirements__content-detail">
+              <span>必須要件</span><br>
+              なし<br>
+              <span>歓迎要件</span><br>
+              ・Webサイトやシステムの公開経験<br>
+              ・OSSへの貢献や技術書の執筆<br>
+              ・Gitを使ったチーム開発
+            </dt>
+          </div>
+          <div class="requirements__content-list">
+            <dd class="requirements__content-title">選考方法</dd>
+            <dt class="requirements__content-detail">
+              エントリーシート、適性検査、面接2回（2023年度入社新卒採用実績）
+            </dt>
+          </div>
+          <div class="requirements__content-list">
+            <dd class="requirements__content-title">求める人物像・スキル</dd>
+            <dt class="requirements__content-detail">
+              【必須スキル・経験】<br>
+              ・なし、未経験者歓迎！<br>
+              【歓迎するスキル・経験】<br>
+              ・売り上げを向上させる施策の企画<br>
+              ・提案経験<br>
+              ・売り上げを向上させる施策をWEBサイトのデザインに落とし込んだ経験<br>
+              【求める人物像】<br>
+              ・コミュニケーション能力の高い方<br>
+              ・主体的に業務に取り組める方<br>
+              ・トライアンドエラーをすることに対して適応性のある方
+            </dt>
+          </div>
+          <div class="requirements__content-list">
+            <dd class="requirements__content-title">初任給</dd>
+            <dt class="requirements__content-detail">
+              240,000円～500,000円（本人の能力・経験次第で変化します）</dt>
+          </div>
+          <div class="requirements__content-list">
+            <dd class="requirements__content-title">勤務時間</dd>
+            <dt class="requirements__content-detail">
+              フレックス勤務 37.5時間/週（コアタイムなし）リモート勤務可（条件あり）</dt>
+          </div>
+          <div class="requirements__content-list">
+            <dd class="requirements__content-title">昇給</dd>
+            <dt class="requirements__content-detail">
+              年2回
+            </dt>
+          </div>
+          <div class="requirements__content-list">
+            <dd class="requirements__content-title">賞与</dd>
+            <dt class="requirements__content-detail">
+              年2回（6月、12月）
+            </dt>
+          </div>
+          <div class="requirements__content-list">
+            <dd class="requirements__content-title">休日休暇</dd>
+            <dt class="requirements__content-detail">
+              週休2日制（土・日）、祝日、創立記念日（10月20日）、夏期・年末年始休暇（各7～9連休）、<br>
+              年次有給休暇（初年度10日、1時間単位で取得可）、リフレッシュ休暇、特別休暇※年間休日129日（2023年度）
+            </dt>
+          </div>
+          <div class="requirements__content-list">
+            <dd class="requirements__content-title">福利厚生</dd>
+            <dt class="requirements__content-detail">
+              ・各種社会保険完備（雇用・労災・健康・厚生年金）<br>
+              ・交通費（30,000円迄）<br>
+              ・住宅手当（上限50,000円）<br>
+              ・書籍購入し放題（書籍の購入を全額負担します）<br>
+              ・社員同士のシャッフルランチ代全額補助<br>
+              ・社員旅行（過去実績：グアム、タイ、ハワイ、バリ島、ベトナム、ラスベガス）<br>
+              ・オフィスおかん（毎日300円分のランチが無料で食べられます）<br>
+              ・ドリンク無料<br>
+              ・デュアルディスプレイ完備
+            </dt>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+  <footer class="footer requirements__footer">
+    <div class="footer__inner">
+      <div class="footer__img">
+        <img src="./assets/images/common/cta-bg-img.jpg" alt="#">
+      </div>
+      <div class="footer__content">
+        <div class="footer__cta-logo-img">
+          <img src="./assets/images/common/cta-logo.png" alt="#">
+        </div>
+        <div class="footer__title">
+          <h2>熱い気持ちを持った方、募集しています。</h2>
+        </div>
+        <div class="footer__text">
+          <p>まずはカジュアルランチから。皆様の就活の思い、悩みの相談に乗ります。<br>また弊社のオフィスツアー・社員との座談会も行います。<br>価値観が会えば、面接に起こしいただけると幸いです</p>
+        </div>
+        <div class="footer__buttom">
+          <a href="http://localhost:3000/entry.html" class="arrow buttom">エントリーはこちら</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+    <h1 class="copyright__logo">
+      <a href="#">
+        <div class="logo__img">
+          <img src="./assets/images/common/igatta-recruit-logo.png" alt="会社ロゴ">
+        </div>
+        <div class="logo__text">
+          <p class="logo__text-subname">新卒採用サイト</p>
+          <p class="logo__text-name">Igatta Group</p>
+        </div>
+      </a>
+    </h1>
+    <div class="copyright__text">
+      <p>Copyright&copy; IGATTA GROUP co.,Ltd. All Rights Reserved.</p>
+    </div>
+  </div>
+
+
+
+
+  <!-- ロゴパーツ -->
+  <!-- <div class="logo">
+    <div class="logo__inner">
+      <div class="logo__img">
+        <img src="./assets/images/common/igatta-recruit-logo.png" alt="会社ロゴ">
+      </div>
+      <div class="logo__text">
+        <p class="logo__text-name">Igatta Group</p>
+        <p class="logo__text-subname">新卒採用サイト</p>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- タイトルパーツ -->
+  <!-- <div class="section__title">
+    <img class="section__title-img" src="./assets/images/common/Mission&Vision.svg" alt="#">
+    <h1 class="section__title-text">Igatta Groupのミッション・ビジョン</h1>
+  </div> -->
+
+  <!-- カードパーツ -->
+  <!-- <div class="card">
+    <div class="card__inner">
+      <div class="card__items">
+        <div class="card__item">
+          <a href="#">
+            <div class="card__item-image">
+              <img src="./assets/images/common/director.jpg" alt="ディレクターの画像">
+            </div>
+            <div class="card__item-content">
+              <h3 class="card__item-title">WEB DIRECTOR</h3>
+              <p class="card__item-text">Webディレクターはクライアントとの打ち合わせから、プロジェクト全体の進捗管理までを行います。</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="yohaku">
+  </div> -->
+
+  <!-- ボタン大 -->
+  <!-- <a href="#" class="arrow buttom">エントリーはこちら</a> -->
+
+</body>
+
+</html>

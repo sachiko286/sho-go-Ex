@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.thanks {
+    background-color: #F6F3EC;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: rem(25);
+    padding-right: rem(25);
+    @include mq(md) {
+        padding-left: rem(20);
+        padding-right: rem(20);
+    }
+}
+
+.thanks h1 {
+    font-size: rem(42);
+    text-align: center;
+    @include mq(md) {
+        font-size: rem(20);
+        letter-spacing: -1.1px;
+    }
+}

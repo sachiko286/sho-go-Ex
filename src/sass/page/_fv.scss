@@ -41,6 +41,7 @@
     height: 100%;
     opacity: 0;
     animation: slider-1 24s linear infinite;
+    max-height: rem(1000);
 }
 
 .fv__slide-image:nth-child(1) {

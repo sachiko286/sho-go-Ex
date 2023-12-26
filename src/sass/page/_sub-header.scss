@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.sub-header {
+    position: static;
+}
+
+.header__nav-item.sub-header__nav-item a {
+    color: #333;
+}

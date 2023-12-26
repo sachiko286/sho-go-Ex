@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex" />
+  <!-- meta情報 -->
+  <title>エントリーフォーム</title>
+  <meta name="description" content="Webマーケティングを中心にクライアントの売上向上に特化した精鋭集団、株式会社Igatta Groupの採用サイトです" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="#" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./assets/js/script.js"></script>
+</head>
+
+<body>
+  <!-- ローディング -->
+  <!-- <div class="loading js-loading">
+    <div class="loading__img js-loading__img">
+      <img src="./assets/images/common/cta-logo.png" alt="logo">
+    </div>
+  </div> -->
+
+  <header class="header sub-header">
+    <div class="header__inner inner">
+      <h1 class="header__logo">
+        <a href="#">
+          <div class="logo__img">
+            <img src="./assets/images/common/igatta-recruit-logo.png" alt="会社ロゴ">
+          </div>
+          <div class="logo__text">
+            <p class="logo__text-name">Igatta Group</p>
+            <p class="logo__text-subname">新卒採用サイト</p>
+          </div>
+        </a>
+      </h1>
+
+      <!-- PCナビ -->
+      <nav class="header__nav">
+        <ul class="header__nav-items">
+          <li class="header__nav-item sub-header__nav-item">
+            <a href="http://localhost:3000/#about">Mission&Vision</a>
+          </li>
+          <li class="header__nav-item sub-header__nav-item">
+            <a href="http://localhost:3000/#message">Message</a>
+          </li>
+          <li class="header__nav-item sub-header__nav-item">
+            <a href="http://localhost:3000/#job">Job List</a>
+          </li>
+          <li class="header__nav-item header__nav-item--mypage">
+            <a class="js-modal-open" target="_blank" rel="noopener">MY PAGEはこちら</a>
+          </li>
+          <li class="header__nav-item header__nav-item--entry">
+            <a href="http://localhost:3000/entry.html" target="_blank" rel="noopener">エントリーはこちら</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ハンバーガーメニュー -->
+      <button class="header__hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- SPナビ -->
+      <div class="header__drawer js-drawer">
+        <nav class="header__drawer-nav">
+          <div class="header__drawer-img logo__img">
+            <img src="./assets/images/common/igatta-recruit-logo.png" alt="会社ロゴ">
+          </div>
+          <ul class="header__drawer-items">
+            <li class="header__drawer-item">
+              <a href="http://localhost:3000/#about">Mission&Vision</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="http://localhost:3000/#message">Message</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="http://localhost:3000/#job">Job List</a>
+            </li>
+            <li class="header__drawer-item--mypage header__nav-item--mypage">
+              <a class="js-modal-open" href="#" target="_blank" rel="noopener">MY PAGEはこちら</a>
+            </li>
+            <li class="header__drawer-item--entry  header__nav-item--entry">
+              <a href="http://localhost:3000/entry.html" target="_blank" rel="noopener">エントリーはこちら</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- モダール -->
+    <div class="modal js-modal">
+      <div class="modal__inner">
+        <div class="modal__overlay js-modal-close"></div>
+        <div class="modal__content">
+          <button class="modal__button js-modal-close">
+            <span></span>
+            <span></span>
+          </button>
+          <div class="modal__title">
+            <h1>MY PAGE-ログイン</h1>
+          </div>
+          <form class="modal__form form" action="">
+            <dl class="modal__wrap">
+              <dt class="modal__label">メールアドレス</dt>
+              <dd class="modal__input">
+                <input type="email" name="email" placeholder="例） example@example.com" required>
+              </dd>
+            </dl>
+            <dl class="modal__wrap">
+              <dt class="modal__label">パスワード</dt>
+              <dd class="modal__input">
+                <input type="password" name="password" required>
+              </dd>
+            </dl>
+            <div class="modal__submit">
+              <input type="submit" id="js-modal-submit" value="サインイン" disabled>
+            </div>
+          </form>
+          <p class="modai__new">
+            <a href="#">新規登録はこちら</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="entry">
+      <div class="entry__inner">
+        <div class="entry__title">
+          <h1>新卒採用<span>エントリーフォーム</span></h1>
+        </div>
+        <div class="entry__lead">
+          <p>弊社にご興味をお持ちいただき、ありがとうございます。<br class="u-desktop">下記をご入力の上、送信ください。</p>
+        </div>
+        <form class="entry__form" id="form" action="">
+          <dl class="entry__form__wrap">
+            <dt class="entry__form__label"><span>必須</span>お名前</dt>
+            <dd class="entry__form__input entry__form-input">
+              <input type="text" id="name" placeholder="例）長谷川　太郎" required>
+            </dd>
+          </dl>
+          <dl class="entry__form__wrap">
+            <dt class="entry__form__label"><span>必須</span>ご年齢</dt>
+            <dd class="entry__form__input entry__form__input-small entry__form-input">
+              <input type="text" id="age" placeholder="例）32" required>
+            </dd>
+          </dl>
+          <dl class="entry__form__wrap">
+            <dt class="entry__form__label"><span>必須</span>メールアドレス</dt>
+            <dd class="entry__form__input entry__form-input">
+              <input type="email" id="mail" placeholder="例）example@example.com" required>
+            </dd>
+          </dl>
+          <dl class="entry__form__wrap entry__form__wrap--radio">
+            <dt class="entry__form__label"><span>必須</span>応募職種</dt>
+            <dd class="entry__form__radio entry__form-radio">
+              <label><input type="radio" name="applocation-type" value="Webディレクター"><span>Webディレクター</span></label>
+              <label><input type="radio" name="applocation-type" value="Webエンジニア"><span>Webエンジニア</span></label>
+              <label><input type="radio" name="applocation-type" value="Webデザイナー"><span>Webデザイナー</span></label>
+              <label><input type="radio" name="applocation-type" value="Webマーケター"><span>Webマーケター</span></label>
+            </dd>
+          </dl>
+          <dl class="entry__form__wrap">
+            <dt class="entry__form__label"><span>必須</span>希望年収</dt>
+            <dd class="entry__form__input entry__form__input-small entry__form-input">
+              <input type="text" id="income"  required>
+            </dd>
+          </dl>
+          <dl class="entry__form__wrap entry__form__wrap--textarea">
+            <dt class="entry__form__label"><span class="entry__form__non-required">必須</span>実績</dt>
+            <dd class="entry__form__textarea entry__form-textarea">
+              <p>これまでの開発実績の分かるGithubのURLや、公開しているWebサイトがあれば、 そのURLの添付をお願いします。</p>
+              <textarea name="achievement" class="entry__form-textarea-lg"></textarea>
+            </dd>
+          </dl>
+          <dl class="entry__form__wrap entry__form__wrap--textarea">
+            <dt class="entry__form__label"><span>必須</span>学歴</dt>
+            <dd class="entry__form__textarea entry__form-textarea">
+              <p>高校以降の学歴をご記載下さい。</p>
+              <textarea name="resume" required></textarea>
+            </dd>
+          </dl>
+          <dl class="entry__form__wrap entry__form__wrap--textarea">
+            <dt class="entry__form__label"><span>必須</span>自己PR</dt>
+            <dd class="entry__form__textarea entry__form-textarea" required>
+              <p>簡単で結構ですので、あなたのPRポイントをご記載下さい。</p>
+              <textarea name="pr"></textarea>
+            </dd>
+          </dl>
+          <div class="entry__form__privacyCheck entry__form-checkbox">
+            <label><input type="checkbox" name="privacyCheck" id="privacyCheck" required value="個人情報保護方針"><span>個人情報保護方針に同意する</span></label>
+          </div>
+          <div class="entry__form__submit entry__form-submit">
+            <input type="submit" class="arrow buttom " id="js-entry__submit" value="エントリーする" disabled>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="copyright">
+    <h1 class="copyright__logo">
+      <a href="#">
+        <div class="logo__img">
+          <img src="./assets/images/common/igatta-recruit-logo.png" alt="会社ロゴ">
+        </div>
+        <div class="logo__text">
+          <p class="logo__text-subname">新卒採用サイト</p>
+          <p class="logo__text-name">Igatta Group</p>
+        </div>
+      </a>
+    </h1>
+    <div class="copyright__text">
+      <p>Copyright&copy; IGATTA GROUP co.,Ltd. All Rights Reserved.</p>
+    </div>
+  </div>
+
+
+
+
+  <!-- ロゴパーツ -->
+  <!-- <div class="logo">
+    <div class="logo__inner">
+      <div class="logo__img">
+        <img src="./assets/images/common/igatta-recruit-logo.png" alt="会社ロゴ">
+      </div>
+      <div class="logo__text">
+        <p class="logo__text-name">Igatta Group</p>
+        <p class="logo__text-subname">新卒採用サイト</p>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- タイトルパーツ -->
+  <!-- <div class="section__title">
+    <img class="section__title-img" src="./assets/images/common/Mission&Vision.svg" alt="#">
+    <h1 class="section__title-text">Igatta Groupのミッション・ビジョン</h1>
+  </div> -->
+
+  <!-- カードパーツ -->
+  <!-- <div class="card">
+    <div class="card__inner">
+      <div class="card__items">
+        <div class="card__item">
+          <a href="#">
+            <div class="card__item-image">
+              <img src="./assets/images/common/director.jpg" alt="ディレクターの画像">
+            </div>
+            <div class="card__item-content">
+              <h3 class="card__item-title">WEB DIRECTOR</h3>
+              <p class="card__item-text">Webディレクターはクライアントとの打ち合わせから、プロジェクト全体の進捗管理までを行います。</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="yohaku">
+  </div> -->
+
+  <!-- ボタン大 -->
+  <!-- <a href="#" class="arrow buttom">エントリーはこちら</a> -->
+
+</body>
+
+</html>

@@ -3,17 +3,20 @@
 .footer {
     margin-top: rem(97);
     position: relative;
+    @include mq(md) {
+        margin-top: rem(50);
+    }
 }
 
 .footer__inner {
     @include mq(md) {
-        height: rem(300);
+        height: rem(330);
     }
 }
 
 .footer__img img{
     @include mq(md) {
-        height: rem(300);
+        height: rem(330);
         object-fit: cover;
     }
 
@@ -29,10 +32,7 @@
     height: 100%;
     width: 100%;
     @include mq(md) {
-        padding-top: rem(30);
-        padding-bottom: rem(20);
-    
-        
+        padding: rem(30) rem(20) rem(20);
     }
 }
 
@@ -41,7 +41,7 @@
 }
 .footer__cta-logo-img img {
     display: inline-block;
-    width: rem(45);
+    width: rem(49);
 }
 .footer__title {
     margin-top: rem(20);

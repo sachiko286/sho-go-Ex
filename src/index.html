@@ -56,19 +56,19 @@
       <nav class="header__nav">
         <ul class="header__nav-items">
           <li class="header__nav-item">
-            <a href="#">Mission&Vision</a>
+            <a href="#about">Mission&Vision</a>
           </li>
           <li class="header__nav-item">
-            <a href="#">Message</a>
+            <a href="#message">Message</a>
           </li>
           <li class="header__nav-item">
-            <a href="#">Job List</a>
+            <a href="#job">Job List</a>
           </li>
           <li class="header__nav-item header__nav-item--mypage">
             <a class="js-modal-open" target="_blank" rel="noopener">MY PAGEはこちら</a>
           </li>
           <li class="header__nav-item header__nav-item--entry">
-            <a href="#" target="_blank" rel="noopener">エントリーはこちら</a>
+            <a href="http://localhost:3000/entry.html" target="_blank" rel="noopener">エントリーはこちら</a>
           </li>
         </ul>
       </nav>
@@ -88,19 +88,19 @@
           </div>
           <ul class="header__drawer-items">
             <li class="header__drawer-item">
-              <a href="#">Mission&Vision</a>
+              <a href="#about">Mission&Vision</a>
             </li>
             <li class="header__drawer-item">
-              <a href="#">Message</a>
+              <a href="#message">Message</a>
             </li>
             <li class="header__drawer-item">
-              <a href="#">Job List</a>
+              <a href="#job">Job List</a>
             </li>
             <li class="header__drawer-item--mypage header__nav-item--mypage">
               <a class="js-modal-open" href="#" target="_blank" rel="noopener">MY PAGEはこちら</a>
             </li>
             <li class="header__drawer-item--entry  header__nav-item--entry">
-              <a href="#" target="_blank" rel="noopener">エントリーはこちら</a>
+              <a href="http://localhost:3000/entry.html" target="_blank" rel="noopener">エントリーはこちら</a>
             </li>
           </ul>
         </nav>
@@ -133,11 +133,11 @@
               </dd>
             </dl>
             <div class="modal__submit">
-              <input type="submit" id="js-submit" value="サインイン" disabled>
+              <input type="submit" id="js-modal-submit" value="サインイン" disabled>
             </div>
           </form>
           <p class="modai__new">
-            <a href="#">新規登録はこちら</a>
+            <a href="http://localhost:3000/entry.html">新規登録はこちら</a>
           </p>
         </div>
       </div>
@@ -150,9 +150,9 @@
       <div class="fv__inner">
         <div class="fv__slide">
           <div class="fv__slide-images">
-          <div class="fv__slide-image"></div>
-          <div class="fv__slide-image"></div>
-          <div class="fv__slide-image"></div>
+            <div class="fv__slide-image"></div>
+            <div class="fv__slide-image"></div>
+            <div class="fv__slide-image"></div>
           </div>
         </div>
         <div class="fv__background">
@@ -167,7 +167,7 @@
     </section>
 
     <section>
-      <div class="about">
+      <div class="about" id="about">
         <div class="about__inner">
           <div class="about__title section__title">
             <img class="section__title-img" src="./assets/images/common/Mission&Vision.svg" alt="#">
@@ -181,7 +181,8 @@
               <h2>未来のビジネスを創る、 <br>クライアントのWebパートナーとして共に成功を</h2>
             </div>
             <div class="about__content-text about__mission-text">
-              <p>Igatta GroupはWebのトータルサポートを行う会社であり、クライアントの売上を伸ばすことを専門としています。<br>"Webパートナー"という表現は、Igatta Groupが単なるサービス提供者ではなく、クライアントと共に連携し、協力してビジネスを進化させていく存在であることを表しています。</p>
+              <p>Igatta GroupはWebのトータルサポートを行う会社であり、クライアントの売上を伸ばすことを専門としています。<br>"Webパートナー"という表現は、Igatta
+                Groupが単なるサービス提供者ではなく、クライアントと共に連携し、協力してビジネスを進化させていく存在であることを表しています。</p>
             </div>
           </div>
           <div class="about__content about__vision">
@@ -192,7 +193,8 @@
               <h2>日本の魅力をWebで輝かせる<br>Igatta Groupが目指す社会を創る</h2>
             </div>
             <div class="about__content-text about__vision-text">
-              <p>Igatta Groupが目指す社会は、優れたサービスや商品が世に出て皆の役に立つことです。<br>Webを活用することで、これらの優れたサービスや商品をより多くの人々に知ってもらい、<br class="u-desktop">売上を伸ばし、事業を成長させることができる社会を目指します。</p>
+              <p>Igatta Groupが目指す社会は、優れたサービスや商品が世に出て皆の役に立つことです。<br>Webを活用することで、これらの優れたサービスや商品をより多くの人々に知ってもらい、<br
+                  class="u-desktop">売上を伸ばし、事業を成長させることができる社会を目指します。</p>
             </div>
           </div>
         </div>
@@ -202,7 +204,7 @@
       </div>
     </section>
 
-    <section class="message">
+    <section class="message" id="message">
       <div class="message__inner">
         <div class="message__title section__title">
           <img class="section__title-img" src="./assets/images/common/Message.svg" alt="#">
@@ -220,7 +222,9 @@
             </div>
             <div class="message__text">
               <p>
-                Igatta Groupのルーツは、1990年代初頭のインターネット黎明期の頃にさかのぼります。<br>まだWebマーケティングという言葉が一般に知れ渡る前に「この先の時代、インターネットでの集客がメインになるはず！」と当時大手印刷会社に努めていた私はIgatta Groupの創業を決めます。<br>しかし、当初は荒波の連続でした。なにせ「チラシ」と「ポスター」で集客をしていた時代です。「ネットで集客なんてできるの？」という懐疑的な声を沢山いただき、クライアント先に営業をするたびにお断りを頂いておりました。「何か怪しいもの」と捉えられていたのです。<br>しかし、1999年にとある町工場のサイトを弊社が公開した後に、その町工場はBBCなどで世界的に取り上げられることになります。<br>日本への取材前にWebブラウジングしていたBBC記者が、弊社作のサイトを偶然見つけたのです。サイト内では「クライアントの魅力を伝える」ことを徹底したため、それが伝わったのだと思います。<br>これにより国内でも大きな話題となり、大手企業を中心に受注をいただくことになりました。<br>挑戦で成長してきた会社です。みなさんの熱い応募、お待ちしています。
+                Igatta
+                Groupのルーツは、1990年代初頭のインターネット黎明期の頃にさかのぼります。<br>まだWebマーケティングという言葉が一般に知れ渡る前に「この先の時代、インターネットでの集客がメインになるはず！」と当時大手印刷会社に努めていた私はIgatta
+                Groupの創業を決めます。<br>しかし、当初は荒波の連続でした。なにせ「チラシ」と「ポスター」で集客をしていた時代です。「ネットで集客なんてできるの？」という懐疑的な声を沢山いただき、クライアント先に営業をするたびにお断りを頂いておりました。「何か怪しいもの」と捉えられていたのです。<br>しかし、1999年にとある町工場のサイトを弊社が公開した後に、その町工場はBBCなどで世界的に取り上げられることになります。<br>日本への取材前にWebブラウジングしていたBBC記者が、弊社作のサイトを偶然見つけたのです。サイト内では「クライアントの魅力を伝える」ことを徹底したため、それが伝わったのだと思います。<br>これにより国内でも大きな話題となり、大手企業を中心に受注をいただくことになりました。<br>挑戦で成長してきた会社です。みなさんの熱い応募、お待ちしています。
               </p>
             </div>
           </div>
@@ -232,7 +236,7 @@
       </div>
     </section>
 
-    <section class="job">
+    <section class="job" id="job">
       <div class="job__inner">
         <div class="job__title section__title">
           <img class="section__title-img" src="./assets/images/common/job List.svg" alt="#">
@@ -244,7 +248,7 @@
         <div class="job__content">
           <div class="job__list-items card__items">
             <div class="job__list-item card__item">
-              <a href="#">
+              <a href="http://localhost:3000/director.html">
                 <div class="job__list-item-img card__item-image">
                   <img src="./assets/images/common/director.jpg" alt="ディレクターの画像">
                 </div>
@@ -255,18 +259,19 @@
               </a>
             </div>
             <div class="job__list-item card__item">
-              <a href="#">
+              <a href="http://localhost:3000/engineer.html">
                 <div class="job__list-item-img card__item-image">
                   <img src="./assets/images/common/frontend.jpg" alt="エンジニアの画像">
                 </div>
                 <div class="job__list-item-box  card__item-content">
                   <h3 class="job__list-item-title card__item-title">WEB ENGINEER</h3>
-                  <p class="job__list-item-text card__item-text">WebエンジニアはクライアントのWebサイトや自社サイトのフロント・バックエンド両方の開発・改修を行います。</p>
+                  <p class="job__list-item-text card__item-text">WebエンジニアはクライアントのWebサイトや自社サイトのフロント・バックエンド両方の開発・改修を行います。
+                  </p>
                 </div>
               </a>
             </div>
             <div class="job__list-item card__item">
-              <a href="#">
+              <a href="http://localhost:3000/designer.html">
                 <div class="job__list-item-img card__item-image">
                   <img src="./assets/images/common/designer.jpg" alt="デザイナーの画像">
                 </div>
@@ -277,7 +282,7 @@
               </a>
             </div>
             <div class="job__list-item card__item">
-              <a href="#">
+              <a href="http://localhost:3000/marketer.html">
                 <div class="job__list-item-img card__item-image">
                   <img src="./assets/images/common/marketer.jpg" alt="マーケター画像">
                 </div>
@@ -308,23 +313,23 @@
           <p>まずはカジュアルランチから。皆様の就活の思い、悩みの相談に乗ります。<br>また弊社のオフィスツアー・社員との座談会も行います。<br>価値観が会えば、面接に起こしいただけると幸いです</p>
         </div>
         <div class="footer__buttom">
-          <a href="#" class="arrow buttom">エントリーはこちら</a>
+          <a href="http://localhost:3000/entry.html" class="arrow buttom">エントリーはこちら</a>
         </div>
       </div>
     </div>
   </footer>
-    <div class="copyright">
-      <h1 class="copyright__logo">
-        <a href="#">
-          <div class="logo__img">
-            <img src="./assets/images/common/igatta-recruit-logo.png" alt="会社ロゴ">
-          </div>
-          <div class="logo__text">
-            <p class="logo__text-subname">新卒採用サイト</p>
-            <p class="logo__text-name">Igatta Group</p>
-          </div>
-        </a>
-      </h1>
+  <div class="copyright">
+    <h1 class="copyright__logo">
+      <a href="#">
+        <div class="logo__img">
+          <img src="./assets/images/common/igatta-recruit-logo.png" alt="会社ロゴ">
+        </div>
+        <div class="logo__text">
+          <p class="logo__text-subname">新卒採用サイト</p>
+          <p class="logo__text-name">Igatta Group</p>
+        </div>
+      </a>
+    </h1>
     <div class="copyright__text">
       <p>Copyright&copy; IGATTA GROUP co.,Ltd. All Rights Reserved.</p>
     </div>
