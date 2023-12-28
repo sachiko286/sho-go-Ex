@@ -1,13 +1,14 @@
 @use "global" as *;
 
-.entry {
+
+.entry__inner {
     background-color: #F6F3EC;
     padding: rem(72) rem(150) rem(75);
     @include mq(md) {
         padding: rem(50) rem(25) rem(50);
     }
 }
-.entry__inner {
+.entry__content {
     padding: rem(98) rem(100) rem(126) rem(100);
     background-color: #fff;
     border-radius: 15px;
@@ -307,7 +308,7 @@ content: "";
     display: inline-block;
     cursor: pointer;
     transition: 0.3s;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .entry__form-submit input.form-submit-active {

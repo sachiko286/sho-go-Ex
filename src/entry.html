@@ -38,7 +38,7 @@
     </div>
   </div> -->
 
-  <header class="header sub-header">
+  <header class="header sub-header js-fv-height">
     <div class="header__inner inner">
       <h1 class="header__logo">
         <a href="#">
@@ -147,74 +147,78 @@
   <main>
     <section class="entry">
       <div class="entry__inner">
-        <div class="entry__title">
-          <h1>新卒採用<span>エントリーフォーム</span></h1>
-        </div>
-        <div class="entry__lead">
-          <p>弊社にご興味をお持ちいただき、ありがとうございます。<br class="u-desktop">下記をご入力の上、送信ください。</p>
-        </div>
-        <form class="entry__form" id="form" action="">
-          <dl class="entry__form__wrap">
-            <dt class="entry__form__label"><span>必須</span>お名前</dt>
-            <dd class="entry__form__input entry__form-input">
-              <input type="text" id="name" placeholder="例）長谷川　太郎" required>
-            </dd>
-          </dl>
-          <dl class="entry__form__wrap">
-            <dt class="entry__form__label"><span>必須</span>ご年齢</dt>
-            <dd class="entry__form__input entry__form__input-small entry__form-input">
-              <input type="text" id="age" placeholder="例）32" required>
-            </dd>
-          </dl>
-          <dl class="entry__form__wrap">
-            <dt class="entry__form__label"><span>必須</span>メールアドレス</dt>
-            <dd class="entry__form__input entry__form-input">
-              <input type="email" id="mail" placeholder="例）example@example.com" required>
-            </dd>
-          </dl>
-          <dl class="entry__form__wrap entry__form__wrap--radio">
-            <dt class="entry__form__label"><span>必須</span>応募職種</dt>
-            <dd class="entry__form__radio entry__form-radio">
-              <label><input type="radio" name="applocation-type" value="Webディレクター"><span>Webディレクター</span></label>
-              <label><input type="radio" name="applocation-type" value="Webエンジニア"><span>Webエンジニア</span></label>
-              <label><input type="radio" name="applocation-type" value="Webデザイナー"><span>Webデザイナー</span></label>
-              <label><input type="radio" name="applocation-type" value="Webマーケター"><span>Webマーケター</span></label>
-            </dd>
-          </dl>
-          <dl class="entry__form__wrap">
-            <dt class="entry__form__label"><span>必須</span>希望年収</dt>
-            <dd class="entry__form__input entry__form__input-small entry__form-input">
-              <input type="text" id="income"  required>
-            </dd>
-          </dl>
-          <dl class="entry__form__wrap entry__form__wrap--textarea">
-            <dt class="entry__form__label"><span class="entry__form__non-required">必須</span>実績</dt>
-            <dd class="entry__form__textarea entry__form-textarea">
-              <p>これまでの開発実績の分かるGithubのURLや、公開しているWebサイトがあれば、 そのURLの添付をお願いします。</p>
-              <textarea name="achievement" class="entry__form-textarea-lg"></textarea>
-            </dd>
-          </dl>
-          <dl class="entry__form__wrap entry__form__wrap--textarea">
-            <dt class="entry__form__label"><span>必須</span>学歴</dt>
-            <dd class="entry__form__textarea entry__form-textarea">
-              <p>高校以降の学歴をご記載下さい。</p>
-              <textarea name="resume" required></textarea>
-            </dd>
-          </dl>
-          <dl class="entry__form__wrap entry__form__wrap--textarea">
-            <dt class="entry__form__label"><span>必須</span>自己PR</dt>
-            <dd class="entry__form__textarea entry__form-textarea" required>
-              <p>簡単で結構ですので、あなたのPRポイントをご記載下さい。</p>
-              <textarea name="pr"></textarea>
-            </dd>
-          </dl>
-          <div class="entry__form__privacyCheck entry__form-checkbox">
-            <label><input type="checkbox" name="privacyCheck" id="privacyCheck" required value="個人情報保護方針"><span>個人情報保護方針に同意する</span></label>
+        <div class="entry__content">
+          <div class="entry__title">
+            <h1>新卒採用<span>エントリーフォーム</span></h1>
           </div>
-          <div class="entry__form__submit entry__form-submit">
-            <input type="submit" class="arrow buttom " id="js-entry__submit" value="エントリーする" disabled>
+          <div class="entry__lead">
+            <p>弊社にご興味をお持ちいただき、ありがとうございます。<br class="u-desktop">下記をご入力の上、送信ください。</p>
           </div>
-        </form>
+          <form class="entry__form" id="form" action="">
+
+            <dl class="entry__form__wrap">
+              <dt class="entry__form__label"><span>必須</span>お名前</dt>
+              <dd class="entry__form__input entry__form-input">
+                <input type="text" id="name" placeholder="例）長谷川　太郎" required>
+              </dd>
+            </dl>
+            <dl class="entry__form__wrap">
+              <dt class="entry__form__label"><span>必須</span>ご年齢</dt>
+              <dd class="entry__form__input entry__form__input-small entry__form-input">
+                <input type="text" id="age" placeholder="例）32" required>
+              </dd>
+            </dl>
+            <dl class="entry__form__wrap">
+              <dt class="entry__form__label"><span>必須</span>メールアドレス</dt>
+              <dd class="entry__form__input entry__form-input">
+                <input type="email" id="mail" placeholder="例）example@example.com" required>
+              </dd>
+            </dl>
+            <dl class="entry__form__wrap entry__form__wrap--radio">
+              <dt class="entry__form__label"><span>必須</span>応募職種</dt>
+              <dd class="entry__form__radio entry__form-radio">
+                <label><input type="radio" name="applocation-type" value="Webディレクター"><span>Webディレクター</span></label>
+                <label><input type="radio" name="applocation-type" value="Webエンジニア"><span>Webエンジニア</span></label>
+                <label><input type="radio" name="applocation-type" value="Webデザイナー"><span>Webデザイナー</span></label>
+                <label><input type="radio" name="applocation-type" value="Webマーケター"><span>Webマーケター</span></label>
+              </dd>
+            </dl>
+            <dl class="entry__form__wrap">
+              <dt class="entry__form__label"><span>必須</span>希望年収</dt>
+              <dd class="entry__form__input entry__form__input-small entry__form-input">
+                <input type="text" id="income" required>
+              </dd>
+            </dl>
+            <dl class="entry__form__wrap entry__form__wrap--textarea">
+              <dt class="entry__form__label"><span class="entry__form__non-required">必須</span>実績</dt>
+              <dd class="entry__form__textarea entry__form-textarea">
+                <p>これまでの開発実績の分かるGithubのURLや、公開しているWebサイトがあれば、 そのURLの添付をお願いします。</p>
+                <textarea name="achievement" class="entry__form-textarea-lg"></textarea>
+              </dd>
+            </dl>
+            <dl class="entry__form__wrap entry__form__wrap--textarea">
+              <dt class="entry__form__label"><span>必須</span>学歴</dt>
+              <dd class="entry__form__textarea entry__form-textarea">
+                <p>高校以降の学歴をご記載下さい。</p>
+                <textarea name="resume" required></textarea>
+              </dd>
+            </dl>
+            <dl class="entry__form__wrap entry__form__wrap--textarea">
+              <dt class="entry__form__label"><span>必須</span>自己PR</dt>
+              <dd class="entry__form__textarea entry__form-textarea" required>
+                <p>簡単で結構ですので、あなたのPRポイントをご記載下さい。</p>
+                <textarea name="pr"></textarea>
+              </dd>
+            </dl>
+            <div class="entry__form__privacyCheck entry__form-checkbox">
+              <label><input type="checkbox" name="privacyCheck" id="privacyCheck" required
+                  value="個人情報保護方針"><span>個人情報保護方針に同意する</span></label>
+            </div>
+            <div class="entry__form__submit entry__form-submit">
+              <input type="submit" class="arrow buttom " id="js-entry__submit" value="エントリーする" disabled>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   </main>

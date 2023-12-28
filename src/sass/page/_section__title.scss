@@ -5,8 +5,10 @@
 }
 
 .section__title-img {
-    width: rem(98);
     display: inline-block;
+    max-height: rem(12);
+    width: auto;
+
 }
 
 .section__title-text {

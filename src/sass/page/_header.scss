@@ -5,7 +5,7 @@
     width: 100%;
     z-index: 4;
     @include mq(md) {
-        position: static;
+        // position: static;
     }
 }
 .header__inner {
@@ -54,6 +54,7 @@
     line-height: 1;
     color: #fff;
 }
+
 
 .header__nav-item--mypage a {
     padding-top: rem(15);
@@ -180,11 +181,14 @@
 .header__drawer-item--mypage.header__nav-item--mypage {
     text-align: center;
     margin-top: rem(30);
+    margin-left: rem(0);
 }
 
 .header__drawer-item--entry.header__nav-item--entry {
     text-align: center;
     margin-top: rem(30);
+    margin-left: rem(0);
+
 }
 
 .header__drawer-img.logo__img {
@@ -195,4 +199,24 @@
     display: inline-block;
     width: 15%;
     height: auto;
+}
+
+.header.is-color{
+    position: fixed;
+    background-color: #fff;
+    animation: slideDown 0.3s ease-in-out;
+    
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.header__nav-item-white.is-color a {
+    color: #333;
 }

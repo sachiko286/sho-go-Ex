@@ -2,8 +2,14 @@
 
 .sub-header {
     position: static;
+    background-color: #fff;
 }
 
 .header__nav-item.sub-header__nav-item a {
     color: #333;
 }
+
+.sub-header.entry-header {
+    position: fixed;
+}
+
