@@ -1,12 +1,13 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
-    
+
+    // 初回のみローディング
     const webStorage = function () {
         if (sessionStorage.getItem('visit')) {
-            $(".loading").css("display", "none");
+            $(".loading").css("visibility", "hidden");
         } else {
             sessionStorage.setItem('visit', 'true'); 
-            $(".loading").delay(2000).fadeOut(2000);
+            $(".loading").delay(2000).fadeOut(1000);
         }
     }
     webStorage();
@@ -23,9 +24,18 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     // }
 
 
-
-
     $(function() {
+        // フェードイン
+        $(window).scroll(function (){
+            $('.js-fade').each(function(){
+                var pos = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll > pos - windowHeight + 100){
+                    $(this).addClass('scroll');
+                }
+            });
+        });
 
 
         // ページ移動先の位置調整
