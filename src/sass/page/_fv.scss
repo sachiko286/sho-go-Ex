@@ -52,17 +52,17 @@
 }
 
 .fv__slide-image:nth-child(1) {
-    background-image: url(/assets/images/common/firstview-img01.jpg);
+    background-image: url(../images/common/firstview-img01.jpg);
     animation-delay: -2s;
 }
 
 .fv__slide-image:nth-child(2) {
-    background-image: url(/assets/images/common/firstview-img02.jpg);
+    background-image: url(../images/common/firstview-img02.jpg);
     animation-delay: 6s;
 }
 
 .fv__slide-image:nth-child(3) {
-    background-image: url(/assets/images/common/firstview-img03.jpg);
+    background-image: url(../images/common/firstview-img03.jpg);
     animation-delay: 14s;
 }
 

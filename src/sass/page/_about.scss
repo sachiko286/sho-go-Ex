@@ -88,8 +88,8 @@
 .js-fade {
     opacity: 0;
     visibility: hidden;
-    transform: translateY(50px);
-    transition: opacity 1s,visibility 1s, transform 1s;
+    transform: translateY(0px);
+    transition: opacity 2s,visibility 2s, transform 2s;
 }
 
 .scroll {

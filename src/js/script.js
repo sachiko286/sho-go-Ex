@@ -31,7 +31,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
                 var pos = $(this).offset().top;
                 var scroll = $(window).scrollTop();
                 var windowHeight = $(window).height();
-                if (scroll > pos - windowHeight + 100){
+                if (scroll > pos - windowHeight + 50){
                     $(this).addClass('scroll');
                 }
             });
