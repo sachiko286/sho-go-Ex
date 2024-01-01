@@ -56,7 +56,10 @@
     font-weight: bold;
     color: #FFF;
     @include mq(md) {
-        font-size: rem(18);;
+        font-size: rem(18);
+    }
+    @include mq(sm) {
+        font-size: rem(16);
     }
 }
 

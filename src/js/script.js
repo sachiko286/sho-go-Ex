@@ -25,6 +25,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
     $(function() {
+
+        
         // フェードイン
         $(window).scroll(function (){
             $('.js-fade').each(function(){
@@ -116,12 +118,18 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         function openDrawer() {
             $(".js-drawer").fadeIn();
             $(".js-hamburger").addClass("is-open");
+            $("body").addClass("fixed").css({ top: -scrollPosition });
+
         }
 
         function closeDrawer() {
             $(".js-drawer").fadeOut();
             $(".js-hamburger").removeClass("is-open");
+            $("body").removeClass("fixed").css({ top: 0 });
+
         }
+        
+        
 
     // モダール
     // $(function () {

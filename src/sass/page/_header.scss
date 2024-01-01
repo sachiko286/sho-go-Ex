@@ -145,7 +145,7 @@
 .header__drawer  {
     padding: rem(100) 0;
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 900;
     top: 0;
     right: 0;
