@@ -97,7 +97,9 @@
 .entry__form__textarea {
     max-width: rem(466);
     width: 100%;
-    margin-top: rem(10);
+    @include mq(md) {
+        margin-top: rem(10);
+    }
 }
 
 .entry__form__input.entry__form__input-small {
@@ -284,7 +286,7 @@ content: "";
     }
 }
 
-.entry__form-textarea textarea.form-textarea-lg {
+.entry__form-textarea.entry__form-textarea-lg textarea {
     height: rem(290);
 }
 
@@ -304,18 +306,38 @@ content: "";
     }
 }
 
-.entry__form-submit input {
+.entry__form-submit button {
     display: inline-block;
     cursor: pointer;
     transition: 0.3s;
     opacity: 0.4;
 }
 
-.entry__form-submit input.form-submit-active {
+.entry__form-submit button.form-submit-active {
     opacity: 1;
 }
 
-.entry__form-submit input::-moz-foucus-inner {
+.entry__form-submit button::-moz-foucus-inner {
 padding: 0;
 border: none;
 }
+
+// .entry__form-submit  {
+//     display: inline-block;
+//     cursor: pointer;
+//     transition: 0.3s;
+//     opacity: 0.4;
+// }
+
+// .entry__form-submit input {
+//     color: #fff;
+// }
+
+// .entry__form-submit.form-submit-active {
+//     opacity: 1;
+// }
+
+// .entry__form-submit::-moz-foucus-inner {
+// padding: 0;
+// border: none;
+// }

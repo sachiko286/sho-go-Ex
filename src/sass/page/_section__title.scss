@@ -12,7 +12,6 @@
 }
 
 .section__title-text {
-    margin-top: rem(9);
     font-size: rem(40);
     @include mq(md) {
         font-size: rem(32);

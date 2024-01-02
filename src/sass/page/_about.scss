@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .about {
-    margin-top: rem(80);
+    margin-top: rem(67);
     // @include mq(md) {
     //     margin-top: rem(0);
     //     padding-top: rem(80);
@@ -12,7 +12,7 @@
     max-width: rem(1000);
     margin-inline: auto;
     padding-left: rem(20);
-    padding-right: rem(43);
+    padding-right: rem(20);
     position: relative;
     @include mq(md) {
         padding-right: rem(20);
@@ -32,7 +32,7 @@
 }
 
 .about__content-title {
-    margin-top: rem(25);
+    margin-top: rem(18);
 }
 
 .about__content-title h2 {
@@ -56,7 +56,7 @@
 }
 
 .about__content-text.about__mission-text {
-    padding-right: rem(237);
+    padding-right: rem(250);
     @include mq(md) {
         padding-right: 0;
     }

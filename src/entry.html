@@ -39,7 +39,7 @@
   </div> -->
 
   <header class="header sub-header js-fv-height">
-    <div class="header__inner inner">
+    <div class="header__inner">
       <div class="header__logo">
         <a href="index.html">
           <div class="logo__img">
@@ -191,9 +191,9 @@
             </dl>
             <dl class="entry__form__wrap entry__form__wrap--textarea">
               <dt class="entry__form__label"><span class="entry__form__non-required">必須</span>実績</dt>
-              <dd class="entry__form__textarea entry__form-textarea">
-                <p>これまでの開発実績の分かるGithubのURLや、公開しているWebサイトがあれば、 そのURLの添付をお願いします。</p>
-                <textarea name="achievement" class="entry__form-textarea-lg" required></textarea>
+              <dd class="entry__form__textarea entry__form-textarea entry__form-textarea-lg">
+                <p>これまでの開発実績の分かるGithubのURLや、公開しているWebサイトがあれば、<br class="u-desktop">そのURLの添付をお願いします。</p>
+                <textarea name="achievement" class=""></textarea>
               </dd>
             </dl>
             <dl class="entry__form__wrap entry__form__wrap--textarea">
@@ -215,8 +215,14 @@
                   value="個人情報保護方針"><span>個人情報保護方針に同意する</span></label>
             </div>
             <div class="entry__form__submit entry__form-submit">
-              <input type="submit" class="arrow buttom " id="js-entry__submit" value="エントリーする" disabled>
+              <button type="submit" class="arrow buttom" id="js-entry__submit" disabled>エントリーする</button>
             </div>
+            <!-- <div class="entry__form__submit entry__form-submit">
+              <div class="arrow buttom">
+                <input type="submit" class="" id="js-entry__submit" disabled value="えんとりーする">
+              </div>
+            </div> -->
+
           </form>
         </div>
       </div>
