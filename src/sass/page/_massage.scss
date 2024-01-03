@@ -8,6 +8,11 @@
     // }
 }
 
+.message__inner {
+    width: rem(1440);
+    margin-inline: auto;
+}
+
 .message__content {
     margin-top: rem(69);
     position: relative;
