@@ -36,10 +36,10 @@
 }
 
 .about__content-title h2 {
-    font-size: rem(24);
+    font-size: 24px;
     font-weight: bold;
     @include mq(md) {
-        font-size: rem(18);
+        font-size: 18px;
     }
 }
 
@@ -48,16 +48,20 @@
 }
 
 .about__content-text p {
-    font-size: rem(16);
+    font-size: 16px;
     line-height: 2.5;
-    @include mq(md) {
+    @include mq(lg) {
+        font-size: 14px;
         line-height: 2;
     }
 }
 
 .about__content-text.about__mission-text {
     padding-right: rem(250);
-    @include mq(md) {
+    @include mq(xl) {
+        padding-right: rem(100);
+    }
+    @include mq(lg) {
         padding-right: 0;
     }
 }
@@ -65,18 +69,18 @@
 .about__content.about__vision {
     text-align: right;
     margin-top: rem(111);
-    @include mq(md) {
+    @include mq(lg) {
         text-align: start;
         margin-top: rem(60);
     }
 }
 
-.about__content-text.about__vision-text {
-    padding-left: rem(257);
-    @include mq(md) {
-        padding-left: 0;
-    }
-}
+// .about__content-text.about__vision-text {
+//     padding-left: rem(257);
+//     @include mq(lg) {
+//         padding-left: 0;
+//     }
+// }
 
 .about__background {
     margin-top: rem(-51);

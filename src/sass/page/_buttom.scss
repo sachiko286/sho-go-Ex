@@ -7,7 +7,7 @@
     text-align: center;
     background-color: #FF8A00;
     color: #fff;
-    font-size: rem(18);
+    font-size: 18px;
     font-weight: bold;
     padding-top: rem(25);
     padding-bottom: rem(25);
@@ -15,11 +15,17 @@
     border-radius: 50px;
     letter-spacing: 0.05em;
     line-height: 1.445;
+	@include mq(xl) {
+		font-size: 16px;
+	}
+	@include mq(lg) {
+		font-size: 14px;
+	}
 	@include mq(md) {
 		max-width: rem(200);
 		padding-top: rem(15);
 		padding-bottom: rem(15);
-		font-size: rem(14);
+		// font-size: rem(14);
 
 	}
 }
@@ -38,19 +44,22 @@
 	position: absolute;
 	top: 0;
 	bottom: 0;
-    right: rem(34);
+    // right: rem(34);
 	margin: auto;
 	content: "";
 	vertical-align: middle;
 }
 
 .buttom::before{
-	width: rem(16);
-	height: rem(16);
+	width: 16px;
+	height: 16px;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	background: #fff;
     right: rem(34);
+	@include mq(lg) {
+		right: rem(24);
+	}
 	@include mq(md) {
 		right: rem(18);
 	}
@@ -58,12 +67,15 @@
 }
 .buttom::after{
     right: rem(40);
-	width: rem(6);
-	height: rem(6);
+	width: 6px;
+	height: 6px;
 	border-top: 2px solid #FF8A00;
 	border-right: 2px solid #FF8A00;
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
+	@include mq(lg) {
+	    right: rem(33);
+	}
 	@include mq(md) {
 		right: rem(24);
 	}

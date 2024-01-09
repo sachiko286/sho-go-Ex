@@ -12,9 +12,10 @@
     position: relative;
 }
 .fv__slide {
-    padding-left: rem(318);
+    // padding-left: rem(318);
     position: absolute;
     width: 100%;
+    height: 100%;
     top: 0;
     z-index: 2;
     @include mq(md) {
@@ -26,14 +27,26 @@
 }
 
 .fv__slide-images {
-    position: relative;
+    position: absolute;
+    right: 0;
     aspect-ratio: 1122 /705;
+    max-width: rem(1122);
+    width: 100%;
     // width: 1122px;
     // height: 705px;
     overflow: hidden;
+    @include mq(md) {
+        // right: auto;
+        width: auto;
+        left: 60px;
+
+    }
     @include mq(sm) {
         height: rem(545);
         aspect-ratio: auto;
+    }
+    @include mq(xxl) {
+        max-width: rem(1400);
     }
 }
 
@@ -49,7 +62,8 @@
     height: 100%;
     opacity: 0;
     animation: slider-1 24s linear infinite;
-    max-height: rem(1000);
+    @include mq(md) {
+    }
 }
 
 .fv__slide-image:nth-child(1) {
@@ -92,18 +106,22 @@
 }
 
 .fv__background {
-padding-top: rem(243);
-padding-right: rem(182);
-// position: absolute;
-width: 100%;
-top: 0;
-z-index: 1;
-@include mq(md) {
-    padding-right: rem(60);
-    padding-top: rem(175);
-}
-@include mq(sm) {
-    padding-top: rem(70);
+    padding-top: rem(243);
+    padding-right: rem(182);
+    // position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    @include mq(md) {
+        padding-right: rem(60);
+        padding-top: rem(175);
+    }
+    @include mq(sm) {
+        padding-top: rem(70);
+    }
+@include mq(xxl) {
+    padding-right: 25%;
+    padding-top: rem(300);
 }
 }
 
@@ -114,21 +132,179 @@ z-index: 1;
         aspect-ratio: auto;
         height: rem(522);
     }
+    @include mq(xxl) {
+    }
 }
 
+// .fv__text {
+//     padding: rem(500) rem(720) rem(137) rem(133);
+//     position: absolute;
+//     width: 100%;
+//     top: 0;
+//     z-index: 3;
+//     @include mq(md) {
+//         padding-right: rem(300);
+//         padding-left: rem(30);
+//         padding-top: rem(300);
+//         padding-bottom: rem(0);
+//     }
+//     @include mq(sm) {
+//         padding: rem(411) rem(17) 0;
+//     }
+// }
+
 .fv__text {
-    padding: rem(500) rem(720) rem(137) rem(133);
     position: absolute;
+    max-width: rem(587);
     width: 100%;
-    top: 0;
+    left: rem(133);
+    bottom: rem(137);
     z-index: 3;
     @include mq(md) {
-        padding-right: rem(300);
-        padding-left: rem(30);
-        padding-top: rem(300);
-        padding-bottom: rem(0);
+        max-width: rem(341);
+        left: rem(17);
+
+        bottom: rem(74);
     }
     @include mq(sm) {
-        padding: rem(411) rem(17) 0;
+        max-width: rem(341);
+        left: rem(17);
+        bottom: rem(74);
+    }
+    @include mq(xxl) {
+        max-width: rem(800);
     }
 }
+
+//-------------------------------------------------------
+// .fv {
+//     @include mq(md) {
+//         padding-top: rem(77);
+//     }
+//     @include mq(sm) {
+//         padding-top: rem(60);
+//     }
+// }
+// .fv__inner {
+//     position: relative;
+// }
+// .fv__slide {
+//     padding-left: rem(318);
+//     position: absolute;
+//     width: 100%;
+//     top: 0;
+//     z-index: 2;
+//     @include mq(md) {
+//         padding-left: rem(60);
+//     }
+//     @include mq(sm) {
+//         padding-bottom: 0;
+//     }
+// }
+
+// .fv__slide-images {
+//     position: relative;
+//     aspect-ratio: 1122 /705;
+//     // width: 1122px;
+//     // height: 705px;
+//     overflow: hidden;
+//     @include mq(sm) {
+//         height: rem(545);
+//         aspect-ratio: auto;
+//     }
+// }
+
+// .fv__slide-image {
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     opacity: 0;
+//     animation: slider-1 24s linear infinite;
+//     max-height: rem(1000);
+// }
+
+// .fv__slide-image:nth-child(1) {
+//     background-image: url(../images/common/firstview-img01.jpg);
+//     animation-delay: -2s;
+// }
+
+// .fv__slide-image:nth-child(2) {
+//     background-image: url(../images/common/firstview-img02.jpg);
+//     animation-delay: 6s;
+// }
+
+// .fv__slide-image:nth-child(3) {
+//     background-image: url(../images/common/firstview-img03.jpg);
+//     animation-delay: 14s;
+// }
+
+// @keyframes slider-1 {
+//     /* 非表示状態からフェードインを開始する */
+//     0% {
+//         opacity: 0;
+//         transform: scale(1); /* ズームのための指定 */
+//     }
+//     /* フェードインを完了し完全表示する */
+//     4.16% {
+//         opacity: 1;
+//     }
+//     /* ここまで完全表示を維持したらフェードアウトを開始する */
+//     33.33% {
+//         opacity: 1;
+//     }
+//     /* フェードアウトを完了し非表示にする */
+//     41.66% {
+//         opacity: 0;
+//         transform: scale(1.2); /* ズームのための指定 */
+//     }
+//     100% {
+//         opacity: 0;
+//     }
+// }
+
+// .fv__background {
+// padding-top: rem(243);
+// padding-right: rem(182);
+// // position: absolute;
+// width: 100%;
+// top: 0;
+// z-index: 1;
+// @include mq(md) {
+//     padding-right: rem(60);
+//     padding-top: rem(175);
+// }
+// @include mq(sm) {
+//     padding-top: rem(70);
+// }
+// }
+
+// .fv__background-item {
+//     background: linear-gradient(180deg, #FF8A00 0%, #FFB800 99.98%);
+//     aspect-ratio: 1258 / 575;
+//     @include mq(sm) {
+//         aspect-ratio: auto;
+//         height: rem(522);
+//     }
+// }
+
+// .fv__text {
+//     padding: rem(494) rem(720) rem(137) rem(133);
+//     position: absolute;
+//     width: 100%;
+//     top: 0;
+//     z-index: 3;
+//     @include mq(md) {
+//         padding-right: rem(300);
+//         padding-left: rem(30);
+//         padding-top: rem(300);
+//         padding-bottom: rem(0);
+//     }
+//     @include mq(sm) {
+//         padding: rem(411) rem(17) 0;
+//     }
+// }

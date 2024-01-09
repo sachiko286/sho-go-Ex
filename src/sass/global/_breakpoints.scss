@@ -28,7 +28,8 @@ $mediaquerys: (
 
 } @else {
   $breakpoints: (
-    xl: 1440,
+    xxl: 1800,
+    xl: 1300,
     lg: 1023,
     md: 767,
     sm: 600,
@@ -38,6 +39,8 @@ $mediaquerys: (
     md: "screen and (max-width: #{map-get($breakpoints,'md')}px)",
     lg: "screen and (max-width: #{map-get($breakpoints,'lg')}px)",
     xl: "screen and (max-width: #{map-get($breakpoints,'xl')}px)",
+    xxl: "screen and (min-width: #{map-get($breakpoints,'xxl')}px)",
+
   );
 
 

@@ -9,7 +9,8 @@
 }
 
 .message__inner {
-    width: rem(1440);
+    max-width: rem(1440);
+    width: 100%;
     margin-inline: auto;
 }
 
@@ -19,13 +20,14 @@
 }
 
 .masseage__img {
-    @include mq(md) {
+    @include mq(lg) {
         position: relative;
+        height: auto;
     }
 }
 
 .masseage__img::after {
-    @include mq(md) {
+    @include mq(lg) {
         content: '';
         position: absolute;
         top: 0;
@@ -37,7 +39,12 @@
 }
 
 .masseage__img img {
-    @include mq(md) {
+    @include mq(xl) {
+        height: 650px;
+        object-fit: cover;
+    }
+    @include mq(lg) {
+        height: auto;
         min-height: rem(272);
         object-fit: cover;
         object-position: 80%
@@ -49,6 +56,15 @@
     margin-top: rem(23);
     position: absolute;
     top: 0;
+    @include mq(xl) {
+        padding-left: rem(100);
+    }
+    @include mq(lg) {
+        padding-left: rem(40);
+        padding-right: rem(40);
+        position: relative;
+        margin-top: rem(-360);
+    }
     @include mq(md) {
         padding-left: rem(20);
         padding-right: rem(20);
@@ -61,12 +77,12 @@
 }
 
 .message__subtitle h2 {
-    font-size: rem(32);
+    font-size: 32px;
     @include mq(md) {
-        font-size: rem(28);
+        font-size: 28px;
     }
     @include mq(sm) {
-        font-size: rem(20);
+        font-size: 20px;
     }
 }
 
@@ -74,7 +90,14 @@
     margin-top: rem(30);
     // padding-right: rem(650);
     max-width: rem(550);
-    @include mq(md) {
+    // @include mq(lg) {
+    //     max-width: rem(680);
+    // }
+    @include mq(xl) {
+        max-width: rem(650);
+
+    }
+    @include mq(lg) {
         padding-right: 0;
         max-width: none;
 
@@ -87,6 +110,13 @@
 .message__text p {
     font-size: rem(16);
     line-height: 2.3;
+    @include mq(xl) {
+        font-size: 14px;
+    }
+    @include mq(lg) {
+        font-size: 14px;
+        line-height: 2;
+    }
     @include mq(md) {
         text-shadow: 0px 0px 10px #ffffff
     }
@@ -104,6 +134,17 @@
     right: 0;
     bottom: rem(53);
     background-color: #fff;
+    @include mq(lg) {
+        max-width: rem(340);
+        padding: rem(10) rem(20);
+        box-shadow: 2px 2px 3px rgb(129, 125, 125);
+        right: auto;
+        bottom: auto;
+        top: rem(100);
+
+
+    }
+
     @include mq(md) {
         max-width: rem(160);
         padding: rem(10) rem(20);
@@ -129,3 +170,10 @@
         margin-top: rem(14);
     }
 }
+
+.message__subtitle-u-mobile {
+    display: none;
+    @include mq("lg") {
+      display: block;
+    }
+  }

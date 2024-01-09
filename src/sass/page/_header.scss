@@ -49,16 +49,20 @@
 }
 
 .header__nav-item a {
-    font-size: rem(13);
+    font-size: 13px;
     font-weight: 500;
     line-height: 1;
     color: #fff;
+    @include mq(xl) {
+        font-size: 12px;
+    }
 }
 
 
 .header__nav-item--mypage a {
     padding-top: rem(15);
     padding-bottom: rem(15);
+    min-width: 120px;
     position: relative;
     height: initial;
     color: #fff;
@@ -73,6 +77,8 @@
 .header__nav-item--entry a {
     padding-top: rem(15);
     padding-bottom: rem(15);
+    min-width: 120px;
+
     position: relative;
     height: initial;
     color: #fff;
@@ -170,7 +176,7 @@
 .header__drawer-item a {
     padding: rem(15) 0;
     display: block;
-    font-size: rem(24);
+    font-size: 24px;
     font-weight: 700;
     line-height: 1;
     letter-spacing: 0.05em;
